@@ -28,6 +28,8 @@ Partial Class Visit_Viewer
         Me.Rtt_data3 = New System.Windows.Forms.RichTextBox()
         Me.Rtt_data1 = New System.Windows.Forms.RichTextBox()
         Me.DG_transactions = New System.Windows.Forms.DataGridView()
+        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.chname = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btn_addchrg = New System.Windows.Forms.Button()
         Me.btn_update = New System.Windows.Forms.Button()
@@ -44,8 +46,6 @@ Partial Class Visit_Viewer
         Me.PrintThisRecordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.asd = New System.Windows.Forms.GroupBox()
         Me.ptdgv = New System.Windows.Forms.DataGridView()
-        Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.chname = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DG_transactions, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -100,6 +100,20 @@ Partial Class Visit_Viewer
         Me.DG_transactions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DG_transactions.Size = New System.Drawing.Size(247, 115)
         Me.DG_transactions.TabIndex = 5
+        '
+        'ID
+        '
+        Me.ID.FillWeight = 50.76142!
+        Me.ID.HeaderText = "ID"
+        Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
+        '
+        'chname
+        '
+        Me.chname.FillWeight = 149.2386!
+        Me.chname.HeaderText = "Charge Name"
+        Me.chname.Name = "chname"
+        Me.chname.ReadOnly = True
         '
         'Label8
         '
@@ -200,24 +214,24 @@ Partial Class Visit_Viewer
         'NewRecordToolStripMenuItem
         '
         Me.NewRecordToolStripMenuItem.Name = "NewRecordToolStripMenuItem"
-        Me.NewRecordToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewRecordToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.NewRecordToolStripMenuItem.Text = "New Record"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(144, 6)
         '
         'EditPatientInformationToolStripMenuItem
         '
         Me.EditPatientInformationToolStripMenuItem.Name = "EditPatientInformationToolStripMenuItem"
-        Me.EditPatientInformationToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EditPatientInformationToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.EditPatientInformationToolStripMenuItem.Text = "Edit Record"
         '
         'DeleteRecordToolStripMenuItem
         '
         Me.DeleteRecordToolStripMenuItem.Name = "DeleteRecordToolStripMenuItem"
-        Me.DeleteRecordToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DeleteRecordToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
         Me.DeleteRecordToolStripMenuItem.Text = "Delete Record"
         '
         'PrintToolStripMenuItem
@@ -252,7 +266,6 @@ Partial Class Visit_Viewer
         Me.ptdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.ptdgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2})
         Me.ptdgv.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ptdgv.Enabled = False
         Me.ptdgv.Location = New System.Drawing.Point(3, 18)
         Me.ptdgv.Name = "ptdgv"
         Me.ptdgv.ReadOnly = True
@@ -261,20 +274,6 @@ Partial Class Visit_Viewer
         Me.ptdgv.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.ptdgv.Size = New System.Drawing.Size(446, 424)
         Me.ptdgv.TabIndex = 17
-        '
-        'ID
-        '
-        Me.ID.FillWeight = 50.76142!
-        Me.ID.HeaderText = "ID"
-        Me.ID.Name = "ID"
-        Me.ID.ReadOnly = True
-        '
-        'chname
-        '
-        Me.chname.FillWeight = 149.2386!
-        Me.chname.HeaderText = "Charge Name"
-        Me.chname.Name = "chname"
-        Me.chname.ReadOnly = True
         '
         'Column1
         '
