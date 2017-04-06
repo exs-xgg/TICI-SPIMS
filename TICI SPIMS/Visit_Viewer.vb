@@ -73,7 +73,7 @@ Public Class Visit_Viewer
                     ptdgv.Rows.Add(row)
                     row = New String() {"METALLIC IMPLANTS?", xdec(readers("PT_IMPLANT").ToString)}
                     ptdgv.Rows.Add(row)
-                    row = New String() {"CLAUTROPHOBIC?", xdec(readers("PT_CLAUSTRO").ToString)}
+                    row = New String() {"CLAUSTROPHOBIC?", xdec(readers("PT_CLAUSTRO").ToString)}
                     ptdgv.Rows.Add(row)
                     row = New String() {"EMERGENCY CONTACT", xdec(readers("PT_ENAME").ToString)}
                     ptdgv.Rows.Add(row)

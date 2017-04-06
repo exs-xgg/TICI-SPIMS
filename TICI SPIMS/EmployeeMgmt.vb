@@ -78,7 +78,7 @@
             Try
                 While readers.Read
                     txtUpUser.Text = readers("USERNAME").ToString
-                    txtUpName.Text = readers("NAME").ToString
+                    txtUpName.Text = readers("FULL_NAME").ToString
                     txtID.Text = readers("UID").ToString
                 End While
             Catch ex As Exception
@@ -103,10 +103,10 @@
                 Case 2 : rx = "gca"
             End Select
 
-            Dim qry As String = "UPDATE USERS SET NAME='" & txtUpName.Text & "', USERNAME='" & txtUpUser.Text & "', PASSWD='" & GetHashPassSHA(txtUpPw.Text) & "', RX='" & rx & "' WHERE UID=" & selectedUserIndex
+            Dim qry As String = "UPDATE USERS SET FULL_NAME='" & txtUpName.Text & "', USERNAME='" & txtUpUser.Text & "', PASSWD='" & GetHashPassSHA(txtUpPw.Text) & "', RX='" & rx & "' WHERE UID=" & selectedUserIndex
             If insertFunction(qry) Then
                 MsgBox("UPDATE SUCCESSFUL!")
-                empdgv.DataSource = getTable("SELECT UID,NAME,USERNAME FROM USERS")
+                empdgv.DataSource = getTable("SELECT UID,FULL_NAME,USERNAME FROM USERS")
                 txtUpPw.Clear()
             End If
         End If

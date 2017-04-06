@@ -1,7 +1,8 @@
 ﻿Imports System.ComponentModel
 
 Public Class Form1
-
+    Public hostname As String = System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName()).AddressList(0).ToString()
+    'System.Net.Dns.GetHostByName(System.Net.Dns.GetHostName()).AddressList(0).ToString()
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         LoginForm1.Show()
         Me.Hide()
@@ -20,6 +21,7 @@ Public Class Form1
             Button1.Enabled = True
             Button1.BackColor = Color.LimeGreen
             Button1.ForeColor = Color.White
+            MsgBox(hostname)
         Else
             MsgBox("Connection to database was unsuccesful!", MsgBoxStyle.Critical)
             Button1.Text = "FAILED"
