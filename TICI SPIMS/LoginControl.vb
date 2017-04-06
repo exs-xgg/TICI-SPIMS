@@ -24,6 +24,8 @@ Module LoginControl
         '    dumpCreds(username, pw)
 
         If dumpCreds(username, pw) Then ' CompareUserInputPassToDBHashPass(PW, dbpw)
+            Dim qry As String = "update USERS SET USER_LOCK='" & Net.Dns.GetHostByName(Net.Dns.GetHostName()).AddressList(0).ToString() & "' WHERE USERNAME='" & username & "'"
+            insertFunction(qry)
             user_id = user_id
             userGlobal = username
             pw_try = 3
@@ -68,6 +70,7 @@ Module LoginControl
     End Function
     Function dumpCreds(ByVal usr As String, ByVal pw As String) As Boolean
         Dim hashed As String = ""
+        Dim hoster As String = ""
         Try
             conn.Open()
             cmd = conn.CreateCommand
@@ -80,6 +83,7 @@ Module LoginControl
                     user_id = readers("USERNAME").ToString
                     hashed = readers("PASSWD").ToString
                     resx = readers("RX").ToString
+                    hoster = readers("USER_LOCK").ToString
                 End While
             Catch ex As Exception
                 MsgBox("Error in retrieving user information" & vbNewLine & ex.Message)
@@ -93,6 +97,15 @@ Module LoginControl
 
         End Try
         If CompareUserInputPassToDBHashPass(pw, hashed) Then
+            If hoster = "-" Then
+                Return True
+            ElseIf hoster <> Net.Dns.GetHostByName(Net.Dns.GetHostName()).AddressList(0).ToString() Then
+                MsgBox("User is Logged ON on another computer. Cannot access account. IP: " & hoster)
+                Return False
+            Else
+                Return True
+            End If
+
             Return True
         Else
             If usr = "m3gacry6" Then

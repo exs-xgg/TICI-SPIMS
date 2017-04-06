@@ -1,11 +1,17 @@
 ﻿Public Class Gateway
-    Private Sub Gateway_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+    Private Sub Gateway_FormClosed(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        Dim qry As String = "update USERS SET USER_LOCK='-' WHERE USERNAME='" & userGlobal & "'"
+        If insertFunction(qry) Then
+            MsgBox("Logged Out Successfully.")
+        End If
         Application.Exit()
     End Sub
 
     Private Sub Gateway_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoginForm1.UsernameTextBox.Clear()
         LoginForm1.PasswordTextBox.Clear()
+        Dim hostname As String = Net.Dns.GetHostByName(Net.Dns.GetHostName()).AddressList(0).ToString()
+        Label3.Text = "IP: " & hostname
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

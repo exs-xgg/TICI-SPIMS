@@ -2,6 +2,7 @@
 
 Public Class Form1
 
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         LoginForm1.Show()
         Me.Hide()
@@ -20,6 +21,7 @@ Public Class Form1
             Button1.Enabled = True
             Button1.BackColor = Color.LimeGreen
             Button1.ForeColor = Color.White
+
         Else
             MsgBox("Connection to database was unsuccesful!", MsgBoxStyle.Critical)
             Button1.Text = "FAILED"

@@ -27,6 +27,7 @@ Partial Class Gateway
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -95,12 +96,24 @@ Partial Class Gateway
         Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(3, 259)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(132, 13)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Tarlac Imaging Center Inc."
+        '
         'Gateway
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(721, 277)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -120,4 +133,5 @@ Partial Class Gateway
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Label3 As Label
 End Class
