@@ -86,11 +86,14 @@ Partial Class Visit_Viewer
         '
         'DG_transactions
         '
+        Me.DG_transactions.AllowUserToAddRows = False
+        Me.DG_transactions.AllowUserToDeleteRows = False
         Me.DG_transactions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DG_transactions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DG_transactions.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.chname})
         Me.DG_transactions.Location = New System.Drawing.Point(745, 230)
         Me.DG_transactions.Name = "DG_transactions"
+        Me.DG_transactions.ReadOnly = True
         Me.DG_transactions.RowHeadersVisible = False
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
         Me.DG_transactions.RowsDefaultCellStyle = DataGridViewCellStyle1
@@ -264,12 +267,14 @@ Partial Class Visit_Viewer
         Me.ID.FillWeight = 50.76142!
         Me.ID.HeaderText = "ID"
         Me.ID.Name = "ID"
+        Me.ID.ReadOnly = True
         '
         'chname
         '
         Me.chname.FillWeight = 149.2386!
         Me.chname.HeaderText = "Charge Name"
         Me.chname.Name = "chname"
+        Me.chname.ReadOnly = True
         '
         'Column1
         '
