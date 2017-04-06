@@ -44,6 +44,7 @@ Partial Class LoginForm1
         '
         Me.UsernameLabel.BackColor = System.Drawing.Color.Transparent
         Me.UsernameLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UsernameLabel.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.UsernameLabel.Location = New System.Drawing.Point(270, 18)
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(119, 23)
@@ -55,6 +56,7 @@ Partial Class LoginForm1
         '
         Me.PasswordLabel.BackColor = System.Drawing.Color.Transparent
         Me.PasswordLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordLabel.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.PasswordLabel.Location = New System.Drawing.Point(266, 75)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(123, 23)
@@ -81,20 +83,32 @@ Partial Class LoginForm1
         '
         'OK
         '
+        Me.OK.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(96, Byte), Integer))
+        Me.OK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(189, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.OK.FlatAppearance.BorderSize = 2
+        Me.OK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.OK.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.OK.Location = New System.Drawing.Point(139, 148)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(116, 36)
         Me.OK.TabIndex = 4
         Me.OK.Text = "&OK"
+        Me.OK.UseVisualStyleBackColor = False
         '
         'Cancel
         '
+        Me.Cancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Cancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(189, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Cancel.FlatAppearance.BorderSize = 2
+        Me.Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Cancel.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.Cancel.Location = New System.Drawing.Point(278, 148)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(116, 36)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancel"
+        Me.Cancel.UseVisualStyleBackColor = False
         '
         'LogoPictureBox
         '
@@ -110,6 +124,7 @@ Partial Class LoginForm1
         Me.AcceptButton = Me.OK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(401, 192)
         Me.Controls.Add(Me.Cancel)

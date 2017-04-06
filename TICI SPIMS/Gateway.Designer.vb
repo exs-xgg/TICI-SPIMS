@@ -99,7 +99,7 @@ Partial Class Gateway
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(721, 277)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)

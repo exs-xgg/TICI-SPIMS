@@ -95,6 +95,7 @@ Partial Class EmployeeMgmt
         Me.GroupBox1.Controls.Add(Me.TextBox7)
         Me.GroupBox1.Controls.Add(Me.TextBox6)
         Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.GroupBox1.Location = New System.Drawing.Point(12, 6)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(425, 271)
@@ -104,7 +105,10 @@ Partial Class EmployeeMgmt
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.AliceBlue
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(96, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(189, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 2
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 10.75!)
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -118,6 +122,7 @@ Partial Class EmployeeMgmt
         '
         'txtCrRx
         '
+        Me.txtCrRx.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtCrRx.FormattingEnabled = True
         Me.txtCrRx.Items.AddRange(New Object() {"Level 1 - Patient Records", "Level 2 - Cashiering / Patient Records", "Level 3 - Admin / Cashiering / Patient Records"})
         Me.txtCrRx.Location = New System.Drawing.Point(127, 186)
@@ -130,6 +135,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label5.Location = New System.Drawing.Point(55, 189)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(69, 17)
@@ -140,6 +146,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label4.Location = New System.Drawing.Point(6, 157)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(118, 17)
@@ -150,6 +157,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label3.Location = New System.Drawing.Point(60, 121)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(64, 17)
@@ -160,6 +168,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label2.Location = New System.Drawing.Point(57, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(67, 17)
@@ -170,6 +179,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Location = New System.Drawing.Point(58, 49)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(66, 17)
@@ -179,6 +189,7 @@ Partial Class EmployeeMgmt
         'txtCrPwPw
         '
         Me.txtCrPwPw.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.txtCrPwPw.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtCrPwPw.Location = New System.Drawing.Point(127, 150)
         Me.txtCrPwPw.Name = "txtCrPwPw"
         Me.txtCrPwPw.Size = New System.Drawing.Size(280, 30)
@@ -188,6 +199,7 @@ Partial Class EmployeeMgmt
         'txtCrPw
         '
         Me.txtCrPw.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.txtCrPw.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtCrPw.Location = New System.Drawing.Point(127, 114)
         Me.txtCrPw.Name = "txtCrPw"
         Me.txtCrPw.Size = New System.Drawing.Size(280, 30)
@@ -197,6 +209,7 @@ Partial Class EmployeeMgmt
         'txtCrUsername
         '
         Me.txtCrUsername.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.txtCrUsername.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtCrUsername.Location = New System.Drawing.Point(127, 78)
         Me.txtCrUsername.Name = "txtCrUsername"
         Me.txtCrUsername.Size = New System.Drawing.Size(280, 30)
@@ -205,6 +218,7 @@ Partial Class EmployeeMgmt
         'txtCrName
         '
         Me.txtCrName.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.txtCrName.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtCrName.Location = New System.Drawing.Point(127, 42)
         Me.txtCrName.Name = "txtCrName"
         Me.txtCrName.Size = New System.Drawing.Size(280, 30)
@@ -214,6 +228,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label6.Location = New System.Drawing.Point(60, 54)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(66, 17)
@@ -224,6 +239,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label7.Location = New System.Drawing.Point(59, 89)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(67, 17)
@@ -234,6 +250,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label8.Location = New System.Drawing.Point(62, 125)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(64, 17)
@@ -244,6 +261,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label9.Location = New System.Drawing.Point(8, 161)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(118, 17)
@@ -254,6 +272,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label10.Location = New System.Drawing.Point(57, 194)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(69, 17)
@@ -266,6 +285,7 @@ Partial Class EmployeeMgmt
         Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox9.Enabled = False
         Me.TextBox9.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox9.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox9.Location = New System.Drawing.Point(130, 186)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(280, 30)
@@ -277,6 +297,7 @@ Partial Class EmployeeMgmt
         Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox8.Enabled = False
         Me.TextBox8.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox8.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox8.Location = New System.Drawing.Point(130, 155)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(280, 30)
@@ -288,6 +309,7 @@ Partial Class EmployeeMgmt
         Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox7.Enabled = False
         Me.TextBox7.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox7.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox7.Location = New System.Drawing.Point(130, 119)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(280, 30)
@@ -299,6 +321,7 @@ Partial Class EmployeeMgmt
         Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox6.Enabled = False
         Me.TextBox6.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox6.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox6.Location = New System.Drawing.Point(130, 83)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(280, 30)
@@ -310,6 +333,7 @@ Partial Class EmployeeMgmt
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox5.Enabled = False
         Me.TextBox5.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox5.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox5.Location = New System.Drawing.Point(130, 46)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(280, 30)
@@ -337,6 +361,7 @@ Partial Class EmployeeMgmt
         Me.GroupBox2.Controls.Add(Me.Label18)
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.Label16)
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.GroupBox2.Location = New System.Drawing.Point(444, 6)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(452, 483)
@@ -348,6 +373,7 @@ Partial Class EmployeeMgmt
         '
         Me.txtID.AutoSize = True
         Me.txtID.BackColor = System.Drawing.Color.AliceBlue
+        Me.txtID.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtID.Location = New System.Drawing.Point(6, 385)
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(66, 17)
@@ -359,6 +385,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label11.Location = New System.Drawing.Point(70, 355)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(69, 17)
@@ -369,6 +396,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label13.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label13.Location = New System.Drawing.Point(75, 320)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(64, 17)
@@ -379,6 +407,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label14.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label14.Location = New System.Drawing.Point(72, 284)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(67, 17)
@@ -389,6 +418,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label15.AutoSize = True
         Me.Label15.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label15.Location = New System.Drawing.Point(73, 248)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(66, 17)
@@ -397,7 +427,10 @@ Partial Class EmployeeMgmt
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.AliceBlue
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(57, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(189, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Button3.FlatAppearance.BorderSize = 2
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 10.75!)
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -411,7 +444,10 @@ Partial Class EmployeeMgmt
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.AliceBlue
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(189, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 2
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 10.75!)
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -425,6 +461,7 @@ Partial Class EmployeeMgmt
         '
         'txtUpRx
         '
+        Me.txtUpRx.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtUpRx.FormattingEnabled = True
         Me.txtUpRx.Items.AddRange(New Object() {"Level 1 - Patient Records", "Level 2 - Cashiering / Patient Records", "Level 3 - Admin / Cashiering / Patient Records"})
         Me.txtUpRx.Location = New System.Drawing.Point(142, 352)
@@ -436,6 +473,7 @@ Partial Class EmployeeMgmt
         'txtUpPw
         '
         Me.txtUpPw.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.txtUpPw.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtUpPw.Location = New System.Drawing.Point(142, 313)
         Me.txtUpPw.Name = "txtUpPw"
         Me.txtUpPw.Size = New System.Drawing.Size(280, 30)
@@ -445,6 +483,7 @@ Partial Class EmployeeMgmt
         'txtUpUser
         '
         Me.txtUpUser.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.txtUpUser.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtUpUser.Location = New System.Drawing.Point(142, 277)
         Me.txtUpUser.Name = "txtUpUser"
         Me.txtUpUser.Size = New System.Drawing.Size(280, 30)
@@ -453,6 +492,7 @@ Partial Class EmployeeMgmt
         'txtUpName
         '
         Me.txtUpName.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.txtUpName.ForeColor = System.Drawing.SystemColors.ControlText
         Me.txtUpName.Location = New System.Drawing.Point(142, 241)
         Me.txtUpName.Name = "txtUpName"
         Me.txtUpName.Size = New System.Drawing.Size(280, 30)
@@ -466,7 +506,7 @@ Partial Class EmployeeMgmt
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlLight
         DataGridViewCellStyle1.NullValue = "NULL"
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -487,6 +527,7 @@ Partial Class EmployeeMgmt
         Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox10.Enabled = False
         Me.TextBox10.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox10.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox10.Location = New System.Drawing.Point(145, 351)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(280, 30)
@@ -498,6 +539,7 @@ Partial Class EmployeeMgmt
         Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox12.Enabled = False
         Me.TextBox12.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox12.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox12.Location = New System.Drawing.Point(145, 317)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(280, 30)
@@ -509,6 +551,7 @@ Partial Class EmployeeMgmt
         Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox13.Enabled = False
         Me.TextBox13.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox13.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox13.Location = New System.Drawing.Point(145, 281)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(280, 30)
@@ -520,6 +563,7 @@ Partial Class EmployeeMgmt
         Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox14.Enabled = False
         Me.TextBox14.Font = New System.Drawing.Font("Segoe UI", 12.75!)
+        Me.TextBox14.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TextBox14.Location = New System.Drawing.Point(145, 244)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(280, 30)
@@ -529,6 +573,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label20.AutoSize = True
         Me.Label20.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label20.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label20.Location = New System.Drawing.Point(72, 358)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(69, 17)
@@ -539,6 +584,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label18.AutoSize = True
         Me.Label18.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label18.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label18.Location = New System.Drawing.Point(77, 323)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(64, 17)
@@ -549,6 +595,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label17.AutoSize = True
         Me.Label17.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label17.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label17.Location = New System.Drawing.Point(74, 287)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(67, 17)
@@ -559,6 +606,7 @@ Partial Class EmployeeMgmt
         '
         Me.Label16.AutoSize = True
         Me.Label16.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label16.Location = New System.Drawing.Point(75, 251)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(66, 17)
@@ -569,7 +617,7 @@ Partial Class EmployeeMgmt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(80, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(916, 501)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
